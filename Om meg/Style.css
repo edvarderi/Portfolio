@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    background-color: #14213D;
+    border-color: #164A70;
+    border: 2px solid;
+    height: 60px;
+}
+
+.header a {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    color: #EAF2F8;
+    text-decoration: none;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.header a:hover {
+    transform: scale(1.06) translateY(-10px);
+    box-shadow: 0 18px 36px rgba(20, 33, 61, 1.0);
+    position: relative;
+    z-index: 2;
+}
+
+.header a.active {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+body {
+    background-color: #EAF2F8;
+    color: #14213D;
+    min-height: 100vh;
+    font-family: 'Lora', serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero {
+    display: flex;
+    align-items: stretch;
+    padding: 50px 0;
+    height: 440px;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
+    height: 270px;
+    width: 800px;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    font-style: italic;
+    margin: 40px 0px;
+}
+
+.hero a {
+    background-color: #122240;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px;
+    width: fit-content;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.hero a:hover {
+    transform: scale(1.06) translateY(-10px);
+    box-shadow: 0 18px 36px rgba(20, 33, 61, 1.0);
+    position: relative;
+    z-index: 2;
+}
+
+.bilde1 {
+
+    border: #122240 solid 5px;
+    border-radius: 5px;
+}
+
+.bilde1 img {
+    height: 100%;
+    width: auto;
+    display: block;
+    object-fit: cover;
+}
+
+section {
+    padding-top: 50px;
+    height: 300px;
+}
+
+.fakta {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.faktatittel {
+    margin: 20 150px;
+    text-decoration: underline;
+}
+
+.litenboks {
+    background-color: white;
+    border: solid lightgray 1px;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 135px;
+    padding: 20px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.litenboks:hover {
+    transform: scale(1.06) translateY(-10px);
+    box-shadow: 0 18px 36px rgba(20, 33, 61, 1.0);
+    position: relative;
+    z-index: 2;
+}
+
+.litenboks p {
+    padding: 5px;
+}
+
+.litenboks h4 {
+    text-decoration: underline overline;
+}
+
+.familie {
+    background-color: white;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 150px;
+    padding: 20 180px;
+}
+
+.familieogvenner {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.imgfamilie {
+    width: 300px;
+    height: 200px;
+}
+
+.imgfamilie img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: #122240 dashed 5px;
+    border-radius: 10px;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #14213D;
+    height: 250px;
+    text-align: center;
+    justify-content: center;
+}
+
+.lenker {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.bokslenker h2 {
+    color: #EAF2F8;
+    width: 200px;
+    text-align: center;
+}
+
+.bokslenker {
+    background-color: #164A70;
+    border: solid 2px white;
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.bokslenker:hover {
+    transform: scale(1.06) translateY(-10px);
+    box-shadow: 0 18px 36px rgba(20, 33, 61, 1.0);
+    position: relative;
+    z-index: 2;
+}
+
+.bokslenker img {
+    height: 50px;
+    padding: 10px;
+}
+
+.section2 h1 {
+    color: #EAF2F8;
+    padding: 25px;
+}
+
+.galleri {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    height: 100vh;
+    padding: 40px 80px;
+}
+
+.kort {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 450px;
+    background-color: #3FA7D6;
+    border: #122240 solid 5px;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 5px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.kort img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border: #14213D solid 5px;
+    border-radius: 10px;
+}
+
+.kort p {
+    padding: 10px;
+    background-color: #EAF2F8;
+    border: #122240 solid 5px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.kort:hover {
+    transform: scale(1.06) translateY(-10px);
+    box-shadow: 0 18px 36px rgba(20, 33, 61, 1.0);
+    position: relative;
+    z-index: 2;
+}
+
+.galleri2 {
+    display: flex;
+    flex-direction: row;
+    background-color: #164A70;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 50px;
+}
+
+.tittel h1 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 20px;
+    background-color: white;
+    border: #122240 solid 5px;
+    border-radius: 10px;
+}
+
+.ommeg {
+    height: 600px;
+}
+
+.ommegtittel {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.bildeogtekst {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    border: #122240 solid 5px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 1000px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.bildeogtekst img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border: #122240 solid 5px;
+    border-radius: 10px;
+}
+
+.ommegtekst h3 {
+    font-weight: normal;
+}
+
+.interesser {
+    background-color: #14213D;
+    height: 200px;
+    color: #EAF2F8;
+}
+
+.interesser h2 {
+    text-align: center;
+}
+
+.kuber {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 20px;
+}
+
+.interesse {
+    font-size: large;
+    background-color: #164A70;
+    border: white solid 3px;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.interesse:hover {
+    transform: scale(1.06) translateY(-10px);
+    box-shadow: 0 18px 36px rgba(20, 33, 61, 1.0);
+    position: relative;
+    z-index: 2;
+}
